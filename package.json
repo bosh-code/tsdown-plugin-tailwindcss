@@ -1,7 +1,7 @@
 {
   "name": "@bosh-code/tsdown-plugin-tailwindcss",
   "description": "Use tailwindcss with your tsdown component libraries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Ryan Bosher <ryan@bosher.co.nz>",
   "bugs": "https://github.com/bosh-code/tsdown-plugin-tailwindcss/issues",
   "contributors": [
