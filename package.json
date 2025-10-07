@@ -1,0 +1,75 @@
+{
+  "name": "@bosh-code/tsdown-plugin-tailwindcss",
+  "description": "Use tailwindcss with your tsdown component libraries",
+  "version": "0.0.0",
+  "author": "Ryan Bosher <ryan@bosher.co.nz>",
+  "bugs": "https://github.com/bosh-code/tsdown-plugin-tailwindcss/issues",
+  "contributors": [
+    {
+      "name": "Ryan Bosher",
+      "email": "ryan@bosher.co.nz",
+      "url": "https://bosher.co.nz"
+    }
+  ],
+  "dependencies": {
+    "@tailwindcss/node": "^4.1.14",
+    "@tailwindcss/oxide": "^4.1.14"
+  },
+  "devDependencies": {
+    "@bosh-code/eslint-plugin": "^1.1.0",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/prompt-cli": "^20.1.0",
+    "@types/node": "^24.7.0",
+    "eslint": "^9.37.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.6.2",
+    "rolldown": "^1.0.0-beta.42",
+    "safe-publish-latest": "^2.0.0",
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/bosh-code/tsdown-plugin-tailwindcss",
+  "keywords": [
+    "bundle",
+    "bundling",
+    "component-library",
+    "css",
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "tsdown",
+    "tsdown-plugin"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "packageManager": "pnpm@10.16.1",
+  "peerDependencies": {
+    "tailwindcss": "^4.1.14"
+  },
+  "private": false,
+  "repository": "bosh-code/tsdown-plugin-tailwindcss.git",
+  "scripts": {
+    "build": "tsdown",
+    "lint": "eslint .",
+    "prepublishOnly": "run-s safe-publish-latest build lint",
+    "safe-publish-latest": "safe-publish-latest",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts"
+}

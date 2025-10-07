@@ -1,0 +1,35 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 120
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+[*.ts]
+ij_typescript_force_semicolon_style = true
+ij_typescript_use_semicolon_after_statement = true
+ij_typescript_spaces_within_imports = true
+
+[*.json]
+ij_json_array_wrapping = off
+ij_json_keep_blank_lines_in_code = 0
+ij_json_keep_indents_on_empty_lines = false
+ij_json_keep_line_breaks = true
+ij_json_keep_trailing_comma = true
+ij_json_object_wrapping = off
+ij_json_property_alignment = do_not_align
+ij_json_space_after_colon = true
+ij_json_space_after_comma = true
+ij_json_space_before_colon = false
+ij_json_space_before_comma = false
+ij_json_spaces_within_braces = false
+ij_json_spaces_within_brackets = false
+ij_json_wrap_long_lines = false

@@ -1,0 +1,16 @@
+# Add files and folders here to ignore them from prettier formatting
+
+# Prettier default
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Dirs
+dist
+.idea
+
+# Files
+README.md
+**/*.json
+**/*.yaml
