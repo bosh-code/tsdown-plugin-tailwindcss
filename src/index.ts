@@ -34,13 +34,11 @@ export const tailwindPlugin = (options: TailwindPluginOptions = {}): Plugin => {
 
     async transform(src, id) {
       if (!isPotentialCssRootFile(id)) return null;
-      console.log('BOSH: tailwind-plugin: transform', { id, src });
 
       using I = new Instrumentation();
       I.start('[@tailwindcss/tsdown] Generate CSS');
 
       let root = roots.get(id);
-      console.log('BOSH: tailwind-plugin: root', root);
 
       let result = await root.generate(
         src,
